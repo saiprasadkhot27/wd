@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Registration Form</title>
+<style>
+h2{
+color:red;
+font:arial;
+}
+
+*{
+background-color:yellow;
+text-align:center;
+
+}
+
+
+</style>
+</head>
+
+<body>
+
+    <h2>Employee Registration Form</h2>
+
+    <form>
+
+        <!-- Personal Details -->
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <label>Full Name:</label>
+            <input type="text" name="fullname" required><br><br>
+
+            <label>Email:</label>
+            <input type="email" name="email" required><br><br>
+
+            <label>Mobile Number:</label>
+            <input type="tel" name="mobile" required><br><br>
+
+            <label>Date of Birth:</label>
+            <input type="date" name="dob"><br><br>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other
+        </fieldset>
+
+        <br>
+
+        <!-- Address -->
+        <fieldset>
+            <legend>Address</legend>
+
+            <label>Address:</label><br>
+            <textarea name="address" rows="4" cols="40"></textarea><br><br>
+
+            <label>City:</label>
+            <input type="text" name="city"><br><br>
+
+            <label>State:</label>
+            <input type="text" name="state"><br><br>
+
+            <label>Pincode:</label>
+            <input type="number" name="pincode">
+        </fieldset>
+
+        <br>
+
+        <!-- Job Details -->
+        <fieldset>
+            <legend>Job Details</legend>
+
+            <label>Department:</label>
+            <select name="department">
+                <option>HR</option>
+                <option>IT</option>
+                <option>Finance</option>
+                <option>Marketing</option>
+            </select><br><br>
+
+            <label>Position:</label>
+            <input type="text" name="position"><br><br>
+
+            <label>Skills:</label><br>
+            <input type="checkbox" name="skills"> HTML
+            <input type="checkbox" name="skills"> CSS
+            <input type="checkbox" name="skills"> JavaScript
+            <input type="checkbox" name="skills"> Python<br><br>
+
+            <label>Experience (Years):</label>
+            <input type="number" name="experience"><br><br>
+
+            <label>Upload Resume:</label>
+            <input type="file" name="resume">
+        </fieldset>
+
+        <br>
+
+        <!-- Login Details -->
+        <fieldset>
+            <legend>Login Details</legend>
+
+            <label>Username:</label>
+            <input type="text" name="username"><br><br>
+
+            <label>Password:</label>
+            <input type="password" name="password"><br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- Buttons -->
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+
+    </form>
+
+</body>
+</html>
